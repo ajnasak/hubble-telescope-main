@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hubble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="line-height: 0; background: #000;" >
+  
+
+<header class="header-sticky scroled">
+ 
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top nav-fixed nav-active" >
+      
+        <div class="container">
+          <img src="imgas/nasalogo.png" width="150px" height="auto" alt="">
+          <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="gallery.html">Images</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="https://i.postimg.cc/j5RRCtb2/menu.png" id="menu">
+        </div>
+        <script>        var menuBtn = document.getElementById("menuBtn")
+          var sideNav = document.getElementById("sideNav")
+          var menu = document.getElementById("menu")
+          sideNav.style.right == "-250px";
+          menuBtn.onclick = function() {
+              if (sideNav.style.right == "-250px") {
+                  sideNav.style.right = "0";
+                  menu.src = "https://i.postimg.cc/cJRss6PP/close.png";
+              } else {
+                  sideNav.style.right = "-250px";
+                  menu.src = "https://i.postimg.cc/j5RRCtb2/menu.png";
+              }
+          }
+  
+          $(document).ready(function() {
+  
+              $("a").on('click', function(event) {
+  
+                  if (this.hash !== "") {
+  
+                      event.preventDefault();
+                      var hash = this.hash;
+  
+                      $('html, body').animate({
+                          scrollTop: $(hash).offset().top
+                      }, 800, function() {
+                          window.location.hash = hash;
+                      });
+                  }
+              });
+          });</script>
+           <!--
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="gallery.html">Images</a>
+                <a href="video.html">Videos</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+            
+            
+            <span style="font-size:30px;cursor:pointer;color: #fff;" onclick="openNav()">&#9776; </span>
+            
+            <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+            </script>-->
+           
+          </div>
+      </nav>
+    </header>
+    
+    
+      <!-- nav end -->
+       <!-- banner str -->
+      <div class="hero">
+        <video autoplay muted loop id="back-video">
+          <source src="video/videoplayback (1) (online-video-cutter.com).mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+ <div class="content head-text">
+        <h1>Hubble Space Telescope</h1>
+        <a href="#about">
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
+      </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner end -->
+<!-- LATEST NEWS str -->
+<section id="about" style="background: url(imgas/bgimage3.jpg); background-size: 100% 100%; background-repeat: no-repeat; background-color: black;" class="bgimg">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 thover">
+        <h2 >LATEST NEWS</h2> 
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h5 class=" news">NASA's Hubble Hunts for Intermediate-Sized Black Hole Close to Home
+        </h5>
+        <h6 class="newsdate"> May 23, 2023</h6>
+        <div class="newsbtn">
+        <a href=""><button class="btn btn-outline-success" type="submit">Read More</button></a>
+      </div>
+   
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- LATEST NEWS end  -->
+      <!-- THE SPACE TELESCOPE str -->
+     
+<section>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 thover thover0">
+      <h2>THE SPACE TELESCOPE</h2>
+      
+    </div>
+  </div>
+ </div> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <div class="telescope">
+      <video autoplay muted loop style="width: 100%; height: 100%;">
+        <source src="video/spacetelescope.mp4" type="video/mp4">
+      </video>
+    </div>
+    </div>
+    <div class="col-md-6 col-sm-12 telescope">
+      <h6 style="text-align: left;color: #fff; margin-left: 10px; font-size: large;">Hubble Space Telescope (HST) </h6>
+      <h5 style="text-align: left;font-family: D-DIN-Bold,Arial,Verdana,sans-serif;
+      font-weight: 600; margin-left: 10px; font-size: 30px;">OVERVIEW</h5>
+      <div class="container overview">
+        <div class="row">
+          <div class="col-md-6"><p>HEIGHT</p></div>
+          <div class="col-md-6"><P style="text-align: right;">13.4m/43.5ft</P></div>
+          <hr>
+        </div>
+        </div>
+      <div class="container overview">
+        <div class="row">
+          <div class="col-md-6"><p>WIDTH</p></div>
+          <div class="col-md-6"><P style="text-align: right;">4.2m/14ft</P></div>
+          <hr>
+        </div>
+      </div>
+      <div class="container overview">
+        <div class="row">
+          <div class="col-md-6"><p>WEIGHT</p></div>
+          <div class="col-md-6"><P style="text-align: right;">11113.013kg/24,000lb</P></div>
+          <hr>
+        </div>
+      </div>
+      <div class="container overview">
+        <div class="row">
+          <div class="col-md-6"><p>LAUNCH DATE</p></div>
+          <div class="col-md-6"><P style="text-align: right;">24/4/1990</P></div>
+          <hr>
+        </div>
+      </div>
+      <div class="container overview">
+        <div class="row">
+          <div class="col-md-6"><p>ROTATION TIME(90%)</p></div>
+          <div class="col-md-6"><P style="text-align: right;">15min</P></div>
+          <hr>
+        </div>
+      </div>
+      <div class="container overview">
+        <div class="row">
+          <div class="col-md-6"><p>ENERGY GATHERS</p></div>
+          <div class="col-md-6"><P style="text-align: right;">2 SOOLAR PANELS/25ft</P></div>
+          <hr>
+        </div>
+      </div>
+      <div class="container overview">
+        <div class="row">
+          <div class="col-md-6"><p>ORBITS THE EARTH SPEED</p></div>
+          <div class="col-md-6"><P style="text-align: right;">17,000mph</P></div>
+          <hr>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+</div>
+<div class="newsbtn">
+ <a href="about.html"> <button class="btn btn-outline-success" type="submit">About Telescope</button></a>
+</div>
+</section>
+<!-- THE SPACE TELESCOPE end -->
+
+
+ 
+
+  <section style="margin-top: 200px;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <figure class="snip1244">
+            <img src="imgas/buttton1.jpg" alt="loaging"/>
+            <figcaption>
+              <h3 style="font-size: 25px; margin-top: 50px; text-align: center;">News</h3>
+             
+            </figcaption>
+            <a href="news.html"></a>
+          </figure>
+          <div class="newsbtn">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1244">
+            <img src="imgas/buttton2.jpg" alt="loaging"/>
+            <figcaption>
+              <h3 style="font-size: 25px; margin-top: 50px; text-align: center;">Images</h3>
+              
+            </figcaption>
+            <a href="gallery.html"></a>
+          </figure>
+          <div class="newsbtn">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1244">
+            <img src="imgas/buttton3.jpg" alt="loaging"/>
+            <figcaption>
+              <h3 style="font-size: 25px; margin-top: 50px; text-align: center;">Videos</h3>
+              
+            </figcaption>
+            <a href="video.html"></a>
+          </figure>
+          <div class="newsbtn">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>  /* Demo purposes only */
+      $(".hover").mouseleave(
+        function () {
+          $(this).removeClass("hover");
+        }
+      );</script>
+  </section>
+
+
+ <!-- button str  
+  <section style="background: url(imgas/bgimage2.jpg); background-size: 100%; background-repeat: no-repeat; background-color: black; height: 400px;" class="bgimg">
+  
+    <div class="container">
+      <div class="row">
+        <div class="hoverbt">
+        <div class="col-md-4 col-sm-12">
+          <a href="#" type="button" class="btn1 hw">News</a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <a href="#" type="button" class="btn1 hw">Images</a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <a href="#" type="button" class="btn1 hw">videos</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>-->
+ <!-- button end  -->
+ <!-- Announcements str  -->   
+ <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 thover">
+        <h2 >Announcements</h2> 
+      </div>
+    </div>
+  </div>
+  <div class="announcement"  style="background: url(imgas/bgimage2.jpg); background-size: 100%; background-repeat: no-repeat; background-color: black;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">      
+           <a href="video/card1.mp4"><img src="imgas/card1.jpg" height="150px" style="margin: 10px;" alt=""></a>
+          </div>
+          <div class="col-md-8 col-sm-12">    
+           <h5>Monthly Tonight's Sky: July Video Now Available</h5>
+           <hr>
+          <H6>Learn more about the constellations you can observe in the night sky during the month of June.</H6>
+          </div>
+          </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">      
+                 <a href="video/card2.mp4"><img src="imgas/card2.jpg" height="150px" style="margin: 10px;" alt=""></a>
+                </div>
+                <div class="col-md-8 col-sm-12">    
+                 <h5>The Summer Season of NASA's Astrophoto Challenges is here!</h5>
+                 <hr>
+                 <H6>This season's targets: the Phantom Galaxy star system and the Carina Nebula.Submit your images for a chance to have your work reviewed by NASA scientists!</H6>
+                 
+                </div>
+                </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-12">      
+                       <a href="video/card3.mp4"><img src="imgas/card3.jpg" height="150px" style="margin: 10px;" alt=""></a>
+                      </div>
+                      <div class="col-md-8 col-sm-12">    
+                       <h5>Introducing Hubble's ULLYSES Program</h5>
+                       <hr>
+                      <H6>Hubble has embarked on an extensive three-year program to observe the ultraviolet emissions of young stars.</H6>
+                      </div>
+                      </div>
+                        </div>
+                      </div>
+          
+ </section>
+ <!-- Announcements end  -->   
+  <!-- slider str  -->
+ <section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 thover">
+        <h2 >Hubble Favorites</h2> 
+      </div>
+    </div>
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides">
+      <img class=" sliderimg" src="imgas/slider3.jpg" >
+      <div class="text">hubble science</div>
+      <h5 class="text1">Open New Doors to the univers with hubble's discoveries</h5>
+    </div>
+    
+    <div class="mySlides">
+      <img class=" sliderimg" src="imgas/slider2.jpg" >
+      <div class="text">Quick Facts</div>
+      <h5  class="text1">Get answers to the most frequently asked questians about hubble</h5>
+    </div>
+    
+    <div class="mySlides">
+
+      <img class=" sliderimg" src="imgas/slider1.jpg" >
+      <div class="text">Collabrating Missions</div>
+      <h5 class="text1">Discover how hubble partners with astronomy community</h5>
+    </div>
+    <div class="mySlides">
+      <img class=" sliderimg" src="imgas/slider4.jpg" >
+      <div class="text">Quick Facts</div>
+      <h5  class="text1">Get answers to the most frequently asked questians about hubble</h5>
+    </div>
+    <div class="mySlides">
+      <img class=" sliderimg" src="imgas/slider5.jpg" >
+      <div class="text">Quick Facts</div>
+      <h5  class="text1">Get answers to the most frequently asked questians about hubble</h5>
+    </div>
+    <div class="mySlides">
+      <img class=" sliderimg" src="imgas/slider6.jpg" >
+      <div class="text">Quick Facts</div>
+      <h5  class="text1">Get answers to the most frequently asked questians about hubble</h5>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    
+    <br>
+    
+    
+    <div class="newsbtn1">
+      <button class="btn btn-outline-success" type="submit">View All</button>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
+  
+ </section>
+   <!-- slider end  -->
+<section style="background-color: #ffffff02;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 thover">
+        <h2 >What is Hubble Looking at Now?</h2> 
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <a class="adec" href="https://spacetelescopelive.org/latest">Visit Space Telescope Live</a> 
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="section bg-footer">
+  <div class="container">
+      <div class="row">
+      
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                 <a href="about.html"><h6 class=" text-uppercase text-white">About Us</h6></a>
+                  
+                 
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="contact.html"><h6 class=" text-uppercase text-white">Contact Us</h6></a>
+                  
+                  
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="https://hubblesite.org/privacy"><h6 class=" text-uppercase text-white">Privacy Policy</h6></a>
+                  
+                  
+                  
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="https://hubblesite.org/copyright"><h6 class=" text-uppercase text-white">copyrigth</h6></a>
+                  
+                 
+                  
+              </div>
+          </div>
+          
+      </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <div class="mt-5">
+      <ul class="list-inline">
+        <a href="https://www.facebook.com/HubbleTelescope/"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://twitter.com/HubbleTelescope"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://www.instagram.com/space_telescopes/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://www.youtube.com/user/HubbleSiteChannel"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+      </ul>
+  </div>
+      <p class="footer-alt mb-0 f-14" style="margin: 30px;">2023 © hubblesite, All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hubble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/news.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="line-height: 0; background: #000;" >
+    <header class="header-sticky scroled">
+ 
+        <nav class="navbar  navbar-expand-lg navbar-dark fixed-top nav-fixed nav-active" >
+          
+            <div class="container">
+              <img src="imgas/nasalogo.png" width="150px" height="auto" alt="">
+                
+         
+               
+              <nav class="navbar  navbar-expand-lg navbar-dark fixed-top nav-fixed nav-active" >
+      
+                <div class="container">
+                  <img src="imgas/nasalogo.png" width="150px" height="auto" alt="">
+                  <div id="sideNav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="gallery.html">Images</a></li>
+                            <li><a href="video.html">Videos</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="menuBtn">
+                    <img src="https://i.postimg.cc/j5RRCtb2/menu.png" id="menu">
+                </div>
+                <script>        var menuBtn = document.getElementById("menuBtn")
+                  var sideNav = document.getElementById("sideNav")
+                  var menu = document.getElementById("menu")
+                  sideNav.style.right == "-250px";
+                  menuBtn.onclick = function() {
+                      if (sideNav.style.right == "-250px") {
+                          sideNav.style.right = "0";
+                          menu.src = "https://i.postimg.cc/cJRss6PP/close.png";
+                      } else {
+                          sideNav.style.right = "-250px";
+                          menu.src = "https://i.postimg.cc/j5RRCtb2/menu.png";
+                      }
+                  }
+          
+                  $(document).ready(function() {
+          
+                      $("a").on('click', function(event) {
+          
+                          if (this.hash !== "") {
+          
+                              event.preventDefault();
+                              var hash = this.hash;
+          
+                              $('html, body').animate({
+                                  scrollTop: $(hash).offset().top
+                              }, 800, function() {
+                                  window.location.hash = hash;
+                              });
+                          }
+                      });
+                  });</script>
+               
+              </div>
+          </nav>
+        </header>
+        <div class="container-fluid" style="background-color: #ffffff05; height: 200px;">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+     
+     <h1 style="position: relative; text-align: center;margin-top: 60px;">_NEWS_</h1>
+       
+              </div>
+            </div>
+          </div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 thover newshead">
+        <h2>News From the Hubble Space Telescope</h2>
+      </div>
+    </div>
+   </div>
+</section>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <figure class="snip1244">
+          <img src="newsimg/news1.jpg" alt="loaging"/>
+          <figcaption>
+            <h3 style="font-size: 25px;">July 20, 2023</h3>
+            <p>Hubble Sees Boulders Escaping from Asteroid Dimorphos.</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <div class="newsbtn">
+          <button class="btn btn-outline-success" type="submit">Read More</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <figure class="snip1244">
+          <img src="newsimg/news2.jpg" alt="loaging"/>
+          <figcaption>
+            <h3 style="font-size: 25px;">May 23, 2023</h3>
+            <p>NASA's Hubble Hunts for Intermediate-Sized Black Hole Close to Home.</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <div class="newsbtn">
+          <button class="btn btn-outline-success" type="submit">Read More</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <figure class="snip1244">
+          <img src="newsimg/news3.jpg" alt="loaging"/>
+          <figcaption>
+            <h3 style="font-size: 25px;">May 19, 2023</h3>
+            <p>STScI Awarded Multi-Year Contract Extension for Roman Space Telescope Science Operations.</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <div class="newsbtn">
+          <button class="btn btn-outline-success" type="submit">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>  /* Demo purposes only */
+    $(".hover").mouseleave(
+      function () {
+        $(this).removeClass("hover");
+      }
+    );</script>
+</section>
+<section style="margin-bottom: 80px;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="page">
+
+          <div class="grid-horizontal">
+            <div class="grid-block">
+              <div class="grid-inner">
+              <h4  style="text-decoration-line: underline;">SUMMERY</h4>
+              <h1>The 2022 DART mission impact rattled the asteroid's surface  </h1>
+              <p style="line-height: 30px;">Sorry Chicken Little, the sky is not falling — at least not yet. <br>
+                Wayward asteroids present a real collision hazard to Earth. Scientists estimate that an asteroid measuring several miles across smashed into Earth <br>
+                65 million years ago and wiped out the dinosaurs, among other forms of life, in a mass extinction. Unlike the dinosaurs, humanity can avoid this fate <br>
+                if we begin practicing how to knock an Earth-approaching asteroid off course. <br>
+                <br>
+                This is trickier than how it has been depicted in science fiction movies like Deep Impact. Planetary scientists first need to know how asteroids were <br>
+                assembled. Are they flying rubble piles of loosely agglomerated rocks, or something more substantial? This information would help provide <br>
+                strategies on how to successfully deflect a menacing asteroid. <br>
+                <br>
+                As a first step, NASA did an experiment to smash into an asteroid to see how it is perturbed. The DART (Double Asteroid Redirection Test) spacecraft <br>
+                impact on asteroid Dimorphos happened on September 26, 2022. Astronomers using the Hubble Space Telescope continue following the aftermath <br>
+                of the cosmic collision. A surprise is the discovery of several dozen boulders lifted off the asteroid after the smashup. In Hubble pictures they look <br>
+                like a swarm of bees very slowly moving away from the asteroid. This might mean that smacking an Earth-approaching asteroid might result in a <br>
+                cluster of threatening boulders heading in our direction.
+              </p>
+              
+            </div>
+            </div>
+            <div class="grid-block">
+              <div class="grid-inner">
+                <h4  style="text-decoration-line: underline;">SUMMERY</h4>
+              <h1>A Dark Central Mass is Lurking at the Hub of a Glittering Stellar <br> Island</h1>
+              <p style="line-height: 30px;">Gravitational traps in space, black holes, come in different sizes. Or more correctly, different masses, because they are all infinitely small. The first <br>
+                black hole ever discovered, in 1971, weighed in at 21 times our Sun's mass. It was formed by the explosion and collapse of a star. Examples of a <br>
+                completely different class of black hole were identified in the 1960s-1970s. They weighed in at millions to billions of times our Sun's mass. Like all <br>
+                supermassive black holes, those monsters dwell in the center of major galaxies. <br>
+                <br>
+                So, black holes can be super-big or super-small. The missing link is an intermediate-mass black hole, weighing roughly 100 to 1,000 times our <br>
+                Sun's mass. A handful have been found in other galaxies. Perhaps they are on the road to growing into supermassive black holes. <br>
+                <br>
+                The cores of globular star clusters are hunting grounds for intermediate-mass black holes. They are smaller than galaxies and should have <br>
+                correspondingly smaller black holes. Over 150 of these snow-globe-shaped collections of hundreds of thousands of stars orbit our Milky Way <br>
+                galaxy, like artificial satellites whirling around Earth. Searches for intermediate-mass back holes in these clusters have been elusive. The suspected <br>
+                central black hole can't be directly observed, of course. Astronomers gather circumstantial evidence by watching stars swarming around the black <br>
+                hole, like bees around a hive. Based on their speeds, the invisible central mass can be calculated using straightforward Newtonian laws of physics.
+              </p>
+              </div>
+            </div>
+            <div class="grid-block">
+              <div class="grid-inner">
+                <h4  style="text-decoration-line: underline;">SUMMERY</h4>
+              <h1>STScI’s responsibilities include engaging the scientific community <br> in the definition of Roman’s core community surveys.</h1>
+              <p style="line-height: 30px;">NASA has awarded a contract to the Space Telescope Science Institute (STScI) in Baltimore, Maryland, to continue acting as the Science Operations <br>
+                Center (SOC) for the Nancy Grace Roman Space Telescope. The contract covers the period through launch, commissioning, and the first year of <br>
+                operations. <br>
+                <br>
+                <a style="text-decoration: underline;" href="https://stsci-opo.org/STScI-01H11YMTVH5RET6QJDX3GQ67DE.pdf">Lee esta historia en español. </a><br>
+                Roman is a NASA observatory that will study essential questions in a wide range of astrophysics topics, such as the evolution of stars, planets, and <br>
+                galaxies, in addition to probing dark energy and detecting thousands of new planets outside our solar system. With a launch commitment no later <br>
+                than May 2027, and launch currently planned for late 2026, Roman will have a five-year prime mission. <br>
+                <br>
+                Roman is primarily a survey observatory, with some additional observations set aside to demonstrate the technology of a next-generation <br>
+                coronagraph instrument. Roman’s surveys are designed to address a number of key <a style="text-decoration: underline;" href="https://www.stsci.edu/roman/about/science-themes">science themes</a>. Up to 75% of its observing time during the <br>
+                first five years of operations will be dedicated to three core community surveys: the High-Latitude Wide-Area Survey, the High-Latitude Time <br>
+                Domain Survey, and the Galactic Bulge Time Domain Survey.
+              </p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="position: relative; background: #ffffff02;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 thover">
+        <h2>STScI Inbox Astronomy Newsletter</h2>
+      </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form class="d-flex" style="width: 40%; margin-left: 30%;">
+          <input class="form-control me-2" type="email" placeholder="Email address..">
+            <button class="btn btn-outline-success" type="submit">SUBSCRIBE</button>
+        </form>
+        <p class="Newslettertext2">This site is protected by reCAPTCHA and the Google <a style="text-decoration-line: underline;" href="">Privacy Policy </a>
+          and <a style="text-decoration-line: underline;" href="">Terms of Service </a>apply.</p>
+          
+      </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row">
+      <div style="margin-bottom: 50px;" class="col-md-5">
+<h3 class="subscribh3">Journalist Resources</h3>
+<p style="line-height: 30px;">Visit the Space Telescope Science Institute (STScI) News Center for fact sheets, contacts, or to request an interview with an astronomer.</p>
+<button class="btn btn-outline-success" type="submit">STScI Journalist Resources</button>
+      </div>
+      <div class="col-md-2">
+        <div class="verticalline"></div>
+      </div>
+      <div style="margin-bottom: 50px;" class="col-md-5">
+        <h3 class="subscribh3">Scientist Resources</h3>
+        <p style="line-height: 30px;">Visit STScI News Center to submit your scientific research about the Hubble Space Telescope's result as a <br> possible news release.</p>
+        <button class="btn btn-outline-success" type="submit">STScI Scientist Resource</button>
+              </div>
+    </div>
+   </div>
+   
+</section>
+
+<footer class="section bg-footer">
+  <div class="container">
+      <div class="row">
+      
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                 <a href="about.html"><h6 class=" text-uppercase text-white">About Us</h6></a>
+                  
+                 
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="contact.html"><h6 class=" text-uppercase text-white">Contact Us</h6></a>
+                  
+                  
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="https://hubblesite.org/privacy"><h6 class=" text-uppercase text-white">Privacy Policy</h6></a>
+                  
+                  
+                  
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="https://hubblesite.org/copyright"><h6 class=" text-uppercase text-white">copyrigth</h6></a>
+                  
+                 
+                  
+              </div>
+          </div>
+          
+      </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <div class="mt-5">
+      <ul class="list-inline">
+        <a href="https://www.facebook.com/HubbleTelescope/"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://twitter.com/HubbleTelescope"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://www.instagram.com/space_telescopes/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://www.youtube.com/user/HubbleSiteChannel"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+      </ul>
+  </div>
+      <p class="footer-alt mb-0 f-14" style="margin: 30px;">2023 © hubblesite, All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+</html>

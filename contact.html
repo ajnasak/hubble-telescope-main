@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hubble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="line-height: 0; background: #000;" >
+    <header class="header-sticky scroled">
+ 
+        <nav class="navbar  navbar-expand-lg navbar-dark fixed-top nav-fixed nav-active" >
+          
+            <div class="container">
+              <img src="imgas/nasalogo.png" width="150px" height="auto" alt="">
+                
+         
+               
+              <nav class="navbar  navbar-expand-lg navbar-dark fixed-top nav-fixed nav-active" >
+      
+                <div class="container">
+                  <img src="imgas/nasalogo.png" width="150px" height="auto" alt="">
+                  <div id="sideNav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="gallery.html">Images</a></li>
+                            <li><a href="video.html">Videos</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="menuBtn">
+                    <img src="https://i.postimg.cc/j5RRCtb2/menu.png" id="menu">
+                </div>
+                <script>        var menuBtn = document.getElementById("menuBtn")
+                  var sideNav = document.getElementById("sideNav")
+                  var menu = document.getElementById("menu")
+                  sideNav.style.right == "-250px";
+                  menuBtn.onclick = function() {
+                      if (sideNav.style.right == "-250px") {
+                          sideNav.style.right = "0";
+                          menu.src = "https://i.postimg.cc/cJRss6PP/close.png";
+                      } else {
+                          sideNav.style.right = "-250px";
+                          menu.src = "https://i.postimg.cc/j5RRCtb2/menu.png";
+                      }
+                  }
+          
+                  $(document).ready(function() {
+          
+                      $("a").on('click', function(event) {
+          
+                          if (this.hash !== "") {
+          
+                              event.preventDefault();
+                              var hash = this.hash;
+          
+                              $('html, body').animate({
+                                  scrollTop: $(hash).offset().top
+                              }, 800, function() {
+                                  window.location.hash = hash;
+                              });
+                          }
+                      });
+                  });</script>
+               
+              </div>
+          </nav>
+        </header>
+        <div class="container-fluid" style="background-color: #ffffff05; height: 200px;">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+     
+     <h1 style="position: relative; text-align: center;margin-top: 60px;">_CONTACT US_</h1>
+       
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 thover newshead">
+                <h2>Have a question?</h2>
+              </div>
+            </div>
+           </div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p style="line-height: 30px; font-size: 18px; color: #fff;text-align: center;margin-top: 38px;">IF YOU HAVE ANY QEUSTIONS ABOUT HUBBLE ASK HERE&#8594;</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="verticalline1"></div>
+                              </div>
+          <div class="col-md-5">
+            <form class="d-flex" style="margin-top: 28px;">
+                <input class="form-control me-2" type="search" placeholder="what is your question?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+        </div>
+        </div>
+       </div>
+</section>
+
+<section style="background-color: #ffffff02;">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 thover newshead">
+            <h2>Send us a comment</h2>
+          </div>
+        </div>
+       </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Please tell us what you think about our site or report a technical problem.</h4>
+            <div class="form-container">
+                <form class="form">
+                  <div class="form-group">
+                    <label style="font-size: 18px;margin-bottom: 10px;" for="email">Email</label>
+                    <input type="text" id="email" name="email" required="">
+                  </div>
+                  <div class="form-group">
+                    <label style="font-size: 18px; margin-bottom: 10px;" for="textarea">comment</label>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                  </div>
+                  <button class="btn btn-outline-success" type="submit">submit</button>
+                </form>
+              </div>
+          </div>
+        </div>
+       </div>
+</section>
+<footer class="section bg-footer">
+  <div class="container">
+      <div class="row">
+      
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                 <a href="about.html"><h6 class=" text-uppercase text-white">About Us</h6></a>
+                  
+                 
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="contact.html"><h6 class=" text-uppercase text-white">Contact Us</h6></a>
+                  
+                  
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="https://hubblesite.org/privacy"><h6 class=" text-uppercase text-white">Privacy Policy</h6></a>
+                  
+                  
+                  
+              </div>
+          </div>
+
+          <div class="col-lg-3" style="text-align: center;">
+              <div class="">
+                  <a href="https://hubblesite.org/copyright"><h6 class=" text-uppercase text-white">copyrigth</h6></a>
+                  
+                 
+                  
+              </div>
+          </div>
+          
+      </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <div class="mt-5">
+      <ul class="list-inline">
+        <a href="https://www.facebook.com/HubbleTelescope/"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://twitter.com/HubbleTelescope"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://www.instagram.com/space_telescopes/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+        <a href="https://www.youtube.com/user/HubbleSiteChannel"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+      </ul>
+  </div>
+      <p class="footer-alt mb-0 f-14" style="margin: 30px;">2023 © hubblesite, All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+</html>

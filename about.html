@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hubble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="line-height: 0; background: #000;" >
+    <header class="header-sticky scroled">
+ 
+        <nav class="navbar  navbar-expand-lg navbar-dark fixed-top nav-fixed nav-active" >
+          
+            <div class="container">
+              <img src="imgas/nasalogo.png" width="150px" height="auto" alt="">
+                
+         
+               
+             <nav class="navbar  navbar-expand-lg navbar-dark fixed-top nav-fixed nav-active" >
+      
+        <div class="container">
+          <img src="imgas/nasalogo.png" width="150px" height="auto" alt="">
+          <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="gallery.html">Images</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="https://i.postimg.cc/j5RRCtb2/menu.png" id="menu">
+        </div>
+        <script>        var menuBtn = document.getElementById("menuBtn")
+          var sideNav = document.getElementById("sideNav")
+          var menu = document.getElementById("menu")
+          sideNav.style.right == "-250px";
+          menuBtn.onclick = function() {
+              if (sideNav.style.right == "-250px") {
+                  sideNav.style.right = "0";
+                  menu.src = "https://i.postimg.cc/cJRss6PP/close.png";
+              } else {
+                  sideNav.style.right = "-250px";
+                  menu.src = "https://i.postimg.cc/j5RRCtb2/menu.png";
+              }
+          }
+  
+          $(document).ready(function() {
+  
+              $("a").on('click', function(event) {
+  
+                  if (this.hash !== "") {
+  
+                      event.preventDefault();
+                      var hash = this.hash;
+  
+                      $('html, body').animate({
+                          scrollTop: $(hash).offset().top
+                      }, 800, function() {
+                          window.location.hash = hash;
+                      });
+                  }
+              });
+          });</script>
+               
+              </div>
+          </nav>
+        </header>
+        <div class="container-fluid" style="background-color: #ffffff05; height: 200px;">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+     
+     <h1 style="position: relative; text-align: center;margin-top: 60px;">_ABOUT US_</h1>
+       
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 thover newshead">
+                <h2>On This Page</h2>
+              </div>
+            </div>
+           </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 thover newshead">
+                
+                <p class="onthispage"><a href="#telescope"> About the Telescope</a></p><p class="onthispage"><a href="#International"> International Partners</a></p><p class="onthispage"><a href="#ScienceInstitute"> About the Space Telescope Science Institute</a></p><p class="onthispage"><a href="#Communications"> About Communications and Outreach</a></p>
+              </div>
+            </div>
+           </div>
+          <section>
+
+            <h1 class="animate__animated title"></h1>
+	</div>
+	<div class="content-area">
+		<div class="wrapper hidden">
+			<div class="content">
+				<h2 id="telescope">THE TELESCOPE</h2>
+				<p>On April 24, 1990, the space shuttle Discovery lifted off from Earth with the Hubble Space Telescope nestled securely in its payload bay. The following day, Hubble was released into space, ready to peer into the vast unknown. Since then, Hubble has reinvigorated and reshaped 
+                    our perception of the cosmos and uncovered a universe of unexpected wonders.
+                     Hubble has revealed properties of space and time that for most of human history were only probed in the imaginations of scientists and philosophers. Today, Hubble continues to provide views of cosmic wonders never before seen and is at the forefront of many new discoveries.</p>
+			</div>
+			<div class="image-area">
+				<img src="imgas/HubbleExploded_edit_1.png" alt="image 1" />
+			</div>
+		</div>
+		<div class="wrapper wraper-reverse hidden">
+			<div class="image-area">
+				<img src="imgas/HubbleExploded_edit_2.png" alt="image 1" />
+			</div>
+			<div class="content">
+				<h2 id="International">INTERNATIONAL PARTNERS</h2>
+				<p>The Hubble Space Telescope is a project of international cooperation between NASA and the European Space Agency. NASA's Goddard Space Flight Center in Greenbelt, MD., manages the telescope. The Space Telescope Science Institute (STScI) in Baltimore, MD., conducts Hubble science operations. STS
+                    cI is operated for NASA by the Association of Universities for Research in Astronomy, Inc., in Washington, DC.</p>
+                    <p>As lead agency, NASA has overall responsibility for the Hubble Space Telescope.  ESA’s contributions to HST include among other things, the Faint Object Camera, the first two solar wings that powered the spacecraft and a team of space scientists and engineers at the Space Telescope Science Institute (STScI) in Baltimore,
+                         MD.  Europe's contribution to HST entitles European astronomers to 15% of the telescope's observing time.</p>
+			</div>
+		</div>
+	</div>
+	
+	</div>
+    <script>const animeTitle = (element) => {
+        const arrayText = element.innerHTML.split("");
+        element.innerHTML = "";
+        arrayText.forEach((letter, indice) => {
+            setTimeout(() => (element.innerHTML += letter), 135 * indice);
+        });
+        element.classList.add("animate__shakeY");
+    };
+    
+    const h1 = document.querySelector("h1.title");
+    
+    animeTitle(h1);
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            entry.isIntersecting
+                ? entry.target.classList.add("show")
+                : entry.target.classList.remove("show");
+        });
+    });
+    
+    const hiddenElements = document.querySelectorAll("div.hidden");
+    
+    hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+          </section>
+           <section>
+            <div class="container1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 thover newshead">
+                    <h2 id="ScienceInstitute">About the Space Telescope Science Institute</h2>
+                  </div>
+                </div>
+               </div>
+                <div class="content1">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="aboutimg/sienceinstitute1.jpg" alt="">
+                    <div class="content-details fadeIn-bottom">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content contenttext"> <p style="text-align: center;">The mission of the <a href="">Space Telescope Science Institute (STScI) </a> is to help humanity explore the universe with advanced space telescopes and ever-
+                                    growing data archives. STScI is a multi-mission science operations center for NASA’s flagship observatories and a world-class astronomical
+                                    research center.
+                                </p>
+                                
+                                <p style="text-align: center;">Established in 1981, the institute has developed and executed the science and mission operations for the <a href=""> Hubble Space Telescope</a> since its launch
+                                    in 1990 and will conduct the science and mission operations for the <a href=""> James Webb Space Telescope</a>. The institute will also be the science operations
+                                    center for the <a href=""> Nancy Grace Roman Space Telescope</a>, formerly known as the Wide Field Infrared Survey Telescope, launching in the mid-2020s.
+                                </p>
+                                
+                                <p style="text-align: center;">The institute also supports other astronomy programs and its science staff conducts world-class scientific research. STScI is the home of the
+                                    <a href="">Barbara A. Mikulski Archive for Space Telescopes (MAST)</a>, where the data of over 20 astronomical missions is curated and disseminated for use by
+                                    the global astronomy community. The institute brings astrophysics to the public through internationally recognized news, education, and public
+                                    outreach programs. 
+                                </p>
+                                
+                                <p style="text-align: center;">The institute is located on the campus of Johns Hopkins University in Baltimore, Maryland, and is operated by the <a href="">Association of Universities for
+                                    Research in Astronomy (AURA)</a>  for NASA.
+                                </p>
+                            </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                       
+                    </div>
+                  </a>
+                </div>
+              </div>
+           </section>
+           <section style="background-color: #ffffff02;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 thover">
+                  <h2 id="Communications">About Communications and Outreach</h2> 
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <p style="line-height: 30px; text-align: center;text-align: center;">Public outreach is at the heart of STScI’s mission. The <a href="https://www.stsci.edu/communications-and-outreach">communications and outreach</a>  team finds innovative ways to share complex scientific
+                    discoveries with the public. An interdisciplinary group of communications professionals and scientists works together to prepare and disseminate
+                    news items, as well as posters, exhibits, and other informal education products in print and electronic formats. 
+                  </p>
+                  <br>
+                  <p style="line-height: 30px; text-align: center;text-align: center;">HubbleSite.org is produced by the Space Telescope Science Institute's <a href="https://www.stsci.edu/communications-and-outreach/public-outreach">Office of Public Outreach (OPO)</a> .</p> 
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="section bg-footer">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div class="">
+                           <a href="about.html"><h6 class=" text-uppercase text-white">About Us</h6></a>
+                            
+                           
+                        </div>
+                    </div>
+          
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div class="">
+                            <a href="contact.html"><h6 class=" text-uppercase text-white">Contact Us</h6></a>
+                            
+                            
+                        </div>
+                    </div>
+          
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div class="">
+                            <a href="https://hubblesite.org/privacy"><h6 class=" text-uppercase text-white">Privacy Policy</h6></a>
+                            
+                            
+                            
+                        </div>
+                    </div>
+          
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div class="">
+                            <a href="https://hubblesite.org/copyright"><h6 class=" text-uppercase text-white">copyrigth</h6></a>
+                            
+                           
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+          
+            <div class="text-center mt-5">
+              <div class="mt-5">
+                <ul class="list-inline">
+                  <a href="https://www.facebook.com/HubbleTelescope/"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+                  <a href="https://twitter.com/HubbleTelescope"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+                  <a href="https://www.instagram.com/space_telescopes/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+                  <a href="https://www.youtube.com/user/HubbleSiteChannel"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff; padding: 10px;"></i></a>
+                </ul>
+            </div>
+                <p class="footer-alt mb-0 f-14" style="margin: 30px;">2023 © hubblesite, All Rights Reserved</p>
+            </div>
+          </footer>
+</body>
+</html>
